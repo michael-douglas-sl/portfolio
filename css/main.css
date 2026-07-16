@@ -1,15 +1,16 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.4;
     padding: 0;
     background: #E6E0F8;
 }
 
-.hidden{
+.hidden {
     width: 0;
     height: 0;
     overflow: hidden;
@@ -17,7 +18,7 @@ body{
     display: block;
 }
 
-.container{
+.container {
     margin-right: auto;
     margin-left: auto;
     padding-left: .5em;
@@ -26,14 +27,14 @@ body{
     background: #E6E0F8;
 }
 
-.badge{
+.badge {
     height: 87vh;
     padding: 40px 20px 0px 20px;
     text-align: center;
-    background-image:   url(../Imagens/Front.webp), 
-                        url(../Imagens/michaeldouglas.webp),
-                        url(../Imagens/Background.webp),
-                        linear-gradient(90deg ,#270202 1%, #1a022f 74%);
+    background-image: url(../Imagens/Front.webp),
+        url(../Imagens/michaeldouglas.webp),
+        url(../Imagens/Background.webp),
+        linear-gradient(90deg, #270202 1%, #1a022f 74%);
     background-size: 110% 360px, 235px 390px, 610px 400px, cover;
     background-repeat: no-repeat;
     background-position: right bottom, center, top, center;
@@ -43,7 +44,7 @@ body{
     align-items: center;
 }
 
-.badge_title{
+.badge_title {
     background-color: #8ec45f;
     color: #fff;
     text-transform: uppercase;
@@ -53,7 +54,7 @@ body{
     border-radius: 10px;
 }
 
-.badge_title_pc{
+.badge_title_pc {
     color: #fff;
     font-size: 0em;
     font-weight: 800;
@@ -62,11 +63,11 @@ body{
     display: block;
 }
 
-.badge_title_pc span{
+.badge_title_pc span {
     color: #8ec45f;
 }
 
-.badge_subtitle_pc{
+.badge_subtitle_pc {
     color: #fff;
     font-size: 0em;
     font-weight: 800;
@@ -75,7 +76,7 @@ body{
     display: block;
 }
 
-.badge_links{
+.badge_links {
     padding: 20px 0 20px;
     display: grid;
     grid-template-rows: repeat(auto-filt, 1fr);
@@ -84,91 +85,93 @@ body{
     grid-auto-flow: column;
 }
 
-.badge_links li{
+.badge_links li {
     display: inline-block;
     padding: 0.5em 0.5em;
     box-sizing: border-box;
 }
 
-.badge_links a{
+.badge_links a {
     font-size: 2.5em;
     text-decoration: none;
-    color: gray;   
+    color: gray;
     transition: 0.1s ease-in-out;
 }
 
-.badge_links a:hover{ 
+.badge_links a:hover {
     font-size: 3em;
 }
 
-.badge_links .icon-linkedin{
+.badge_links .icon-linkedin {
     color: #0e4fa8;
 }
 
-.badge_links .icon-linkedin:hover{
+.badge_links .icon-linkedin:hover {
     text-shadow: 0 0 0.3em rgba(135, 139, 244, 0.48), 0 0 0.3em rgba(135, 139, 244, 0.48);
 }
 
-.badge_links .icon-instagram{
+.badge_links .icon-instagram {
     color: #a62bb5;
 }
 
-.badge_links .icon-instagram:hover{
+.badge_links .icon-instagram:hover {
     text-shadow: 0 0 0.3em rgba(244, 175, 252, 0.61), 0 0 0.3em rgba(242, 164, 252, 0.61);
-    box-sizing: 50px;   
+    box-sizing: 50px;
 }
 
-.badge_links .icon-twitter{
-        color: #2a85c7;
+.badge_links .icon-twitter {
+    color: #2a85c7;
 }
 
-.badge_links .icon-twitter:hover{
+.badge_links .icon-twitter:hover {
     text-shadow: 0 0 0.2em rgba(42, 133, 199, 0.53), 0 0 0.2em rgba(42, 133, 199, 0.53);
-    box-sizing: 50px;   
+    box-sizing: 50px;
 }
 
-.badge_links .icon-github, .badge_links .icon-x{
-        color: black;
+.badge_links .icon-github,
+.badge_links .icon-x {
+    color: black;
 }
 
-.badge_links .icon-github:hover{
+.badge_links .icon-github:hover {
     text-shadow: 0 0 0.2em #8e8e8e, 0 0 0.2em #8e8e8e;
-    box-sizing: 50px;   
+    box-sizing: 50px;
 }
 
-.game-cards{
+.game-cards {
     overflow: hidden;
     padding: 0 20px;
 }
 
-.projects{
+.projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 100px 2px 0px 2px;
-    background:     linear-gradient(135deg, white 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
-                    linear-gradient(-135deg, white 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
+    background: linear-gradient(135deg, white 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
+        linear-gradient(-135deg, white 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
     background-size: 40px 40px;
     text-align: center;
     text-transform: uppercase;
     color: #380B61;
 }
-.projects h2{
+
+.projects h2 {
     padding: 15px 70px 10px 70px;
     font-family: 'Press Start 2P', sans-serif;
     color: #270202
 }
 
-.projects-cards{
-    margin-top: 2.5em; 
+.projects-cards {
+    margin-top: 2.5em;
 }
 
-.projects-cards:nth-child(6){
+.projects-cards:nth-child(6) {
     margin-bottom: 2.5em;
 }
 
-.projects-cards__image{
+.projects-cards__image {
     width: 100%;
     border-radius: 40px;
     display: block;
@@ -176,11 +179,11 @@ body{
     filter: grayscale(1);
 }
 
-.projects-cards a:hover .projects-cards__image{
+.projects-cards a:hover .projects-cards__image {
     filter: grayscale(1);
 }
 
-.projects-cards a{
+.projects-cards a {
     display: block;
     border-radius: 40px;
     transition: .3s ease-in-out;
@@ -188,30 +191,34 @@ body{
 }
 
 /*------------------------ Thumbs --------------------*/
-.projects-cards:nth-child(1) a:hover{
+.projects-cards:nth-child(1) a:hover {
     box-shadow: 0 0 1em #1df800, 0 0 1em #1df800;
 }
 
-.projects-cards:nth-child(2) a:hover{
+.projects-cards:nth-child(2) a:hover {
     box-shadow: 0 0 1em #777777, 0 0 1em #777777;
 }
-.projects-cards:nth-child(3) a:hover{
+
+.projects-cards:nth-child(3) a:hover {
     box-shadow: 0 0 1em #FF0000, 0 0 1em #FF0000;
 }
-.projects-cards:nth-child(4) a:hover{
+
+.projects-cards:nth-child(4) a:hover {
     box-shadow: 0 0 1em #4B0082, 0 0 1em #4B0082;
 }
-.projects-cards:nth-child(5) a:hover{
+
+.projects-cards:nth-child(5) a:hover {
     box-shadow: 0 0 1em #FFD700, 0 0 1em #FFD700;
 }
-.projects-cards:nth-child(6) a:hover{
+
+.projects-cards:nth-child(6) a:hover {
     box-shadow: 0 0 1em #0B0B3B, 0 0 1em #0B0B3B;
 }
 
-.projects-cards .relatos_vera_cruz:after{
-    content:'';
+.projects-cards .relatos_vera_cruz:after {
+    content: '';
     background-image: url(../Imagens/RelatosDeVeraCruz.png);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 75%;
@@ -224,10 +231,10 @@ body{
     transition: .4s ease-in-out;
 }
 
-.projects-cards .monkey_business:after{
-    content:'';
+.projects-cards .monkey_business:after {
+    content: '';
     background-image: url(../Imagens/MonkeyBusiness.webp);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 75%;
@@ -240,10 +247,10 @@ body{
     transition: .4s ease-in-out;
 }
 
-.projects-cards .desce_mais_uma:after{
-    content:'';
+.projects-cards .desce_mais_uma:after {
+    content: '';
     background-image: url(../Imagens/descemaisuma.webp);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 75%;
@@ -256,10 +263,10 @@ body{
     transition: .4s ease-in-out;
 }
 
-.projects-cards .vizinha_viral:after{
-    content:'';
+.projects-cards .vizinha_viral:after {
+    content: '';
     background-image: url(../Imagens/vizinhaviral.webp);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 75%;
@@ -272,10 +279,10 @@ body{
     transition: .4s ease-in-out;
 }
 
-.projects-cards .downtown_run_down:after{
-    content:'';
+.projects-cards .downtown_run_down:after {
+    content: '';
     background-image: url(../Imagens/DowntownRun-Down.webp);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 75%;
@@ -285,13 +292,14 @@ body{
     transform: translate(-50%, -50%);
     position: absolute;
     opacity: 1;
-    transition: .4s ease-in-out;;
+    transition: .4s ease-in-out;
+    ;
 }
 
-.projects-cards .relivium:after{
-    content:'';
+.projects-cards .relivium:after {
+    content: '';
     background-image: url(../Imagens/Relivium.webp);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 90%;
@@ -304,16 +312,119 @@ body{
     transition: .4s ease-in-out;
 }
 
-.projects-cards .relatos_vera_cruz:hover::after, 
-.projects-cards .monkey_business:hover:after, 
-.projects-cards .relivium:hover:after, 
-.projects-cards .desce_mais_uma:hover:after, 
-.projects-cards .vizinha_viral:hover:after, 
-.projects-cards .downtown_run_down:hover:after{
+.projects-cards .relatos_vera_cruz:hover::after,
+.projects-cards .monkey_business:hover:after,
+.projects-cards .relivium:hover:after,
+.projects-cards .desce_mais_uma:hover:after,
+.projects-cards .vizinha_viral:hover:after,
+.projects-cards .downtown_run_down:hover:after {
     opacity: 1;
 }
 
-.footer{
+.backend-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    gap: 50px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.backend-card {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    transition: .25s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.backend-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 1em #8ec45f, 0 0 1em #8ec45f;
+}
+
+.backend-card h3 {
+    color: #270202;
+    margin-bottom: 15px;
+}
+
+.backend-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.backend-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.backend-stack span {
+    background: #8ec45f;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: .9rem;
+}
+
+.backend-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.backend-links a {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #5b1ca5;
+}
+
+.backend-links a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #8ec45f;
+    text-shadow:0 0 5px #8ec45f;
+}
+
+.project-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #8ec45f;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: .75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Press Start 2P';
+}
+
+.backend-card.in-development > .project-badge {
+    background: #ffb347;
+    color: #3b2500;
+}
+
+.backend-card.in-development:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 1em #ffb347, 0 0 1em #ffb347;
+}
+
+.backend-card.in-development > .backend-links a:hover {
+    color: #ffb347;
+    text-shadow:0 0 5px #ffb347;
+}
+
+.in-production {
+    background: #3d8bfd;
+    color: #fff;
+}
+
+.footer {
     display: block;
     text-align: center;
     background-color: #270202;
@@ -325,222 +436,322 @@ body{
 
 /*---------- Medias ----------*/
 
-@media screen and (min-width: 375px){
-    .badge{
-        background-size: 110% 400px, 245px 400px,650px 410px, cover;
+@media screen and (min-width: 360px) {
+    .badge {
+        background-size: 110% 400px, 245px 400px, 650px 410px, cover;
+    }
+
+    .project-badge {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px auto;
+        font-size: 10px;
+    }
+
+    .backend-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        margin: 20px 20px 80px 20px;
+        text-align: center;
+    }
+
+    .backend-cards p {
+        text-align: left;
+    }
+
+    .backend-card h3 {
+        margin-top: 0;
     }
 }
 
-@media screen and (min-width: 411px){
-    .badge{
+@media screen and (min-width: 411px) {
+    .badge {
         background-size: 110% 400px, 290px 500px, 670px 450px, cover;
     }
 }
 
-@media screen and (min-width: 768px){
-    .badge{
-        background-size: 110% 400px, 320px 550px, 950px 650px, cover;
+@media screen and (min-width: 540px) {
+    .backend-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 20px 20px 80px 20px;
     }
 }
 
-@media screen and (min-width: 800px){
-    .game-cards{
-    overflow: visible;
-    padding: 0 0;
+@media screen and (min-width: 768px) {
+    .badge {
+        background-size: 110% 400px, 320px 550px, 950px 650px, cover;
     }
-    
-    .game-cards{
+
+    .project-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 8px 14px;
+        border-radius: 30px;
+        font-size: .75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: 'Press Start 2P';
+    }
+
+    .backend-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        margin: 20px 20px 80px 20px;
+    }
+
+    .backend-card {
+        position: relative;
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        transition: .25s;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    }
+
+    .backend-card h3 {
+        color: #270202;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .game-cards {
+        overflow: visible;
+        padding: 0 0;
+    }
+
+    .game-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
-    
-    .projects-cards:nth-child(6){
-    margin-bottom: 2.5em;
+
+    .projects-cards:nth-child(6) {
+        margin-bottom: 2.5em;
     }
-    
-    .projects h2{
-    font-size: 3em;
+
+    .projects h2 {
+        font-size: 3em;
     }
-    
-    .badge{
+
+    .badge {
         background-size: 110% 400px, 265px 450px, 850px 600px, cover;
         background-position: right bottom, center, center, center;
     }
-    
-    .projects-cards__image{
+
+    .projects-cards__image {
         filter: grayscale(0);
     }
-    
-    .projects-cards .relatos_vera_cruz:after, 
-    .projects-cards .monkey_business:after, 
-    .projects-cards .desce_mais_uma:after, 
-    .projects-cards .vizinha_viral:after, 
-    .projects-cards .downtown_run_down:after, 
-    .projects-cards .relivium:after{
-    content:'';
-    opacity: 0;
+
+    .projects-cards .relatos_vera_cruz:after,
+    .projects-cards .monkey_business:after,
+    .projects-cards .desce_mais_uma:after,
+    .projects-cards .vizinha_viral:after,
+    .projects-cards .downtown_run_down:after,
+    .projects-cards .relivium:after {
+        content: '';
+        opacity: 0;
     }
-    
-    .container{
-    max-width: 750px;
+
+    .container {
+        max-width: 750px;
+    }
+
+    .backend-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-bottom: 80px;
+        margin-top: 20px;
+    }
+
+    .backend-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        margin: 20px 20px 80px 20px;
     }
 }
 
-@media screen and (min-width: 1024px){
-    .game-cards{
+@media screen and (min-width: 1024px) {
+    .game-cards {
         grid-gap: 3%;
     }
-    .container{
-    max-width: 970px;
+
+    .container {
+        max-width: 970px;
+    }
+
+    .backend-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        margin-bottom: 80px;
+        ;
     }
 }
 
-@media screen and (min-width: 1366px){
-    .badge{
-    justify-content: center;
-    align-items:flex-start;
-    background-image:   linear-gradient(rgba(255,255,255,0) 70% , black),
-                        url(../Imagens/michaeldouglas.webp),
-                        url(../Imagens/Background.webp),
-                        linear-gradient(to right, #000000 , #270202 40% , #1a022f);
-    height: 92vh;
-    background-size: cover, 265px 450px, 850px 600px, cover;
-    background-position: center, 880px bottom, 600px bottom, center;
-    }
-    
-    .badge_title{
-    background-color: rgba(255,255,255,0);
-    font-size: 0em;
-    margin: 0 0 0 0; 
-    padding: 0px 0px;
-    overflow: hidden;
-    opacity: 0;
-    display: block;
-    }
-    
-    .badge_title_pc{
-    font-size: 3em;
-    margin: 0 0 0 50px; 
-    padding: 0px 0px;
-    overflow: none;
-    opacity: 1;
+@media screen and (min-width: 1366px) {
+    .badge {
+        justify-content: center;
+        align-items: flex-start;
+        background-image: linear-gradient(rgba(255, 255, 255, 0) 70%, black),
+            url(../Imagens/michaeldouglas.webp),
+            url(../Imagens/Background.webp),
+            linear-gradient(to right, #000000, #270202 40%, #1a022f);
+        height: 92vh;
+        background-size: cover, 265px 450px, 850px 600px, cover;
+        background-position: center, 880px bottom, 600px bottom, center;
     }
 
-    .badge_title_job{
-    font-size: 2.2em;
-    color: #ffff;
-    margin: 0 0 0 50px; 
-    padding: 0px 0px;
-    overflow: none;
-    opacity: 1;
-    }
-    
-    .badge_subtitle_pc{
-    font-size: 1.2em;
-    margin: 0 0 0 50px; 
-    padding: 0px 0px;
-    overflow: hidden;
-    opacity: 1;
+    .badge_title {
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 0em;
+        margin: 0 0 0 0;
+        padding: 0px 0px;
+        overflow: hidden;
+        opacity: 0;
+        display: block;
     }
 
-    .badge_links{
+    .badge_title_pc {
+        font-size: 3em;
+        margin: 0 0 0 50px;
+        padding: 0px 0px;
+        overflow: none;
+        opacity: 1;
+    }
+
+    .badge_title_job {
+        font-size: 2.2em;
+        color: #ffff;
+        margin: 0 0 0 50px;
+        padding: 0px 0px;
+        overflow: none;
+        opacity: 1;
+    }
+
+    .badge_subtitle_pc {
+        font-size: 1.2em;
+        margin: 0 0 0 50px;
+        padding: 0px 0px;
+        overflow: hidden;
+        opacity: 1;
+    }
+
+    .badge_links {
         padding: 20px 0px 20px 15px;
         grid-auto-rows: 4em;
         grid-auto-columns: 7.5em;
     }
-    
-    .badge_links a{
-    font-size: 3em;
-    color: gray;   
-    transition: 0.1s ease-in-out;
+
+    .badge_links a {
+        font-size: 3em;
+        color: gray;
+        transition: 0.1s ease-in-out;
     }
- 
-    .badge_links a:hover{
+
+    .badge_links a:hover {
         font-size: 4em;
     }
-    
-    .badge_links .icon-github, .badge_links .icon-x{
+
+    .badge_links .icon-github,
+    .badge_links .icon-x {
         color: #ffffff;
     }
-    
-    .projects{
-    background:     linear-gradient(135deg, #000000 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
-                    linear-gradient(-135deg, #000000 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
-    background-size: 40px 40px;
+
+    .projects {
+        background: linear-gradient(135deg, #000000 50%, transparent 50%) left calc(50% + 20px) top no-repeat,
+            linear-gradient(-135deg, #000000 50%, transparent 50%) left calc(50% - 20px) top no-repeat;
+        background-size: 40px 40px;
     }
-    
-    .game-cards{
+
+    .game-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
     }
-    
-    .container{
-    max-width: 1300px;
+
+    .container {
+        max-width: 1300px;
     }
-    
-    .badge_links .icon-instagram:hover, .badge_links .icon-linkedin:hover, .badge_links .icon-twitter:hover, .badge_links .icon-github:hover{
-      text-shadow: 0 0 0.2em rgba(42, 133, 199, 0); 
+
+    .badge_links .icon-instagram:hover,
+    .badge_links .icon-linkedin:hover,
+    .badge_links .icon-twitter:hover,
+    .badge_links .icon-github:hover {
+        text-shadow: 0 0 0.2em rgba(42, 133, 199, 0);
     }
 }
 
-@media screen and (min-width: 1600px){
-    .badge{
-    background-size: cover,320px 550px, 1100px 750px, cover;    
-    background-position: center, 1000px bottom, 620px bottom, center;
+@media screen and (min-width: 1600px) {
+    .badge {
+        background-size: cover, 320px 550px, 1100px 750px, cover;
+        background-position: center, 1000px bottom, 620px bottom, center;
     }
 }
 
-@media screen and (min-width: 1920px){
-    .game-cards{
+@media screen and (min-width: 1920px) {
+    .game-cards {
         grid-gap: 3%;
     }
-    .container{
-    max-width: 1800px;
+
+    .container {
+        max-width: 1800px;
     }
-    
-    .projects-cards:nth-child(6){
-    margin-bottom: 10em;
+
+    .projects-cards:nth-child(6) {
+        margin-bottom: 10em;
     }
-    
-    .projects h2{
-    font-size: 4em;
-    padding: 15px 70px 50px 70px;
+
+    .projects h2 {
+        font-size: 4em;
+        padding: 15px 70px 50px 70px;
     }
-    
-    .badge{
+
+    .badge {
         background-size: cover, 385px 650px, 1250px 800px, cover;
         background-position: center, 1090px bottom, 670px bottom, center;
     }
 }
 
-@media screen and (min-width: 2560px){
-    .badge{
-    background-size: cover, 450px 750px, 1700px 1050px, cover; 
-    background-position: center, 1450px bottom, 850px bottom, center;
+@media screen and (min-width: 2560px) {
+    .badge {
+        background-size: cover, 450px 750px, 1700px 1050px, cover;
+        background-position: center, 1450px bottom, 850px bottom, center;
     }
-    
-     .badge_title_pc{
-    font-size: 4em;
-    margin: 0 0 0 50px; 
-    padding: 0px 0px;
-    overflow: none;
-    opacity: 1;
+
+    .badge_title_pc {
+        font-size: 4em;
+        margin: 0 0 0 50px;
+        padding: 0px 0px;
+        overflow: none;
+        opacity: 1;
     }
-    
-    .badge_subtitle_pc{
-    font-size: 1.7em;
-    margin: 0 0 0 50px; 
-    padding: 0px 0px;
-    overflow: hidden;
-    opacity: 1;
+
+    .badge_subtitle_pc {
+        font-size: 1.7em;
+        margin: 0 0 0 50px;
+        padding: 0px 0px;
+        overflow: hidden;
+        opacity: 1;
     }
-    
-    .game-cards{
+
+    .game-cards {
         grid-gap: 5%;
     }
-    .container{
-    max-width: 2200px;
+
+    .container {
+        max-width: 2200px;
+    }
+
+    .backend-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        margin-bottom: 80px;
+        ;
     }
 }
