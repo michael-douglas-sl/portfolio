@@ -1,0 +1,120 @@
+.section_skills{
+    margin-top:120px;
+    max-width:1300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.skill-panel{
+    position: relative;
+    border:3px solid #6d6ba5;
+    border-radius:14px;
+    padding:65px 40px 40px;
+    margin:80px auto;
+    background:rgba(255,255,255,.15);
+    backdrop-filter: blur(2px);
+    max-width:1200px;
+    transition:.25s;
+}
+
+.skill-panel:hover{
+    border-color:#8ec45f;
+    box-shadow:0 0 25px rgba(142,196,95,.18);
+}
+
+.panel-title{
+    position:absolute;
+    top:-22px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#262648;
+    color:white;
+    padding:10px 26px;
+    border-radius:12px;
+    font-family:'Press Start 2P';
+    font-size:.75rem;
+    border:2px solid #3f4170;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-size:2rem;
+    color:#270202;
+    margin-bottom:80px;
+    position:relative;
+}
+
+.skill-tree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-node {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-node:not(:last-child) {
+    margin-right: 80px;
+}
+
+.skill-node:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 100%;
+    width: 80px;
+    height: 3px;
+    background: #8ec45f;
+}
+
+.skill-node img {
+    width: 64px;
+    transition: .25s;
+}
+
+.skill-node:hover img {
+    transform: translateY(-8px);
+    filter: drop-shadow(0 0 12px #8ec45f);
+}
+
+.skill-node span {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+
+    .skill-tree {
+        flex-direction: column;
+    }
+
+    .skill-node::after {
+        width: 3px;
+        height: 40px;
+    }
+
+    .skill-node:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .skill-node:not(:last-child)::after{
+        top: 100%;
+        left: 50%;
+        width: 3px;
+        height: 60px;
+        transform: translateX(-50%);
+    }
+
+}

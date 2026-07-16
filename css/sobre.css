@@ -38,17 +38,21 @@ body{
 /*---------- Sobre ----------*/
 
 .sobre{
-    display: grid;
-    padding: 5em 0 0 0;
-    grid-template-rows: auto;   
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
+    max-width:1000px;
+    margin:50px auto 0;
 }
 
 .sobre-desc{
-    box-sizing: border-box;
-    margin-bottom: 50px;
+    background:white;
+    padding:50px;
+    border-radius:18px;
+    border:3px solid #d8d8ea;
+    transition:.25s;
+}
+
+.sobre-desc:hover{
+    border-color:#8ec45f;
+    box-shadow:0 0 30px rgba(142,196,95,.15);
 }
 
 .sobre h3{
@@ -60,7 +64,6 @@ body{
     text-transform: uppercase;
 }
 .sobre p{
-    text-align:justify;
     font-weight: bold;
     color: #222;
     padding: 0 10px 15px 10px;
@@ -72,61 +75,6 @@ body{
     color: #8ec45f;
     font-weight: 800;
     text-decoration: none;
-}
-
-.section_skills{
-    position: relative;
-    width: 100%;
-    font-weight: 600;
-    font-size: .8em;
-    margin-bottom: 50px;
-}
-
-.section_skills .skills{
-    position: relative;
-    display: flex;
-    margin: 20px 0;
-    overflow: hidden;
-    transition: 0.5s;
-    background: #8ec45f;
-    border-radius: 5px 0 0 5px;
-}
-
-.section_skills .skills .name{
-    position: relative;
-    width: 70px;
-    padding: 8px 0 0 5px;
-    text-align: left;
-    color: #fff; 
-}
-
-.section_skills .skills .value{
-    position: absolute;
-    width: 95%;
-    padding: 5px 0 0 0;
-    text-align: right;
-    color: #8ec45f;
-    text-transform: uppercase;
-}
-
-.section_skills .percent{
-    position: relative;
-    width: calc(100% - 20px);
-    height: 30px;
-    margin: 0 0 0 0;
-    background: #1a022f;
-    overflow: hidden;
-}
-
-.section_skills .skills .percent .progress{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 100%;
-    background: #fff;
-    animation: animate 1s ease-in-out forwards;
-
 }
 
 .tab{
@@ -158,23 +106,8 @@ body{
   
     .sobre h3{
     font-size: 2em;
-    padding: 50px 10px 15px 1em;
+    padding: 0px 10px 15px 1em;
     text-align: left;
-    }
-    
-    .section_skills .percent{
-    width: calc(100% - 20px);
-    height: 35px;
-    }
-    
-    .section_skills .skills .name{
-    width: 70px;
-    padding: 8px 30px 0 10px;
-    text-align: left;
-    color: #fff;
-    }
-    .section_skills span{
-        font-size: 1.2em;
     }
 }
 
@@ -193,8 +126,6 @@ body{
         grid-template-columns: 1fr;
         align-items: center;
     }
-    .container{
-    }
     
     .sobre{
         grid-template-columns: 1fr 1fr;
@@ -207,13 +138,6 @@ body{
     .sobre-desc{
         display: block;
         box-sizing: border-box;
-    }
-    
-    .section_skills{
-        display: block;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
     }
     
     .footer{
